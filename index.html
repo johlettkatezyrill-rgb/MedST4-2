@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test 4 Study Garden ♡ Heart Failure &amp; Hypertension</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#ff6fa5; --pink-d:#c92a6c; --pink-m:#e63e82; --pink-l:#ffd6e7; --pink-xl:#fff0f6;
+  --lilac:#efe6ff; --lilac-b:#b79cf0; --lilac-ink:#5b3a99;
+  --ink:#5a2a41; --ink-soft:#8a5470;
+  --mint:#d9f7e8; --mint-b:#3fbf8f; --mint-ink:#1f6b4d;
+  --rose:#ffe3e8; --rose-b:#ff6b81; --rose-ink:#9c2440;
+  --butter:#fff4c9; --butter-b:#f2b134; --butter-ink:#7a5410;
+  --card:#fff; --shadow:0 10px 30px rgba(255,111,165,.22);
+  --bow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cpath d='M32 20C20 4 2 4 4 20c-2 16 16 16 28 0z' fill='%23ff6fa5'/%3E%3Cpath d='M32 20C44 4 62 4 60 20c2 16-16 16-28 0z' fill='%23ff6fa5'/%3E%3Cpath d='M30 26 20 38l8-2 4-8zM34 26l10 12-8-2-4-8z' fill='%23e63e82'/%3E%3Cellipse cx='32' cy='20' rx='6' ry='7' fill='%23e63e82'/%3E%3Cpath d='M12 16c4-5 10-6 15-2M52 16c-4-5-10-6-15-2' stroke='%23fff' stroke-opacity='.55' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100vh; color:var(--ink);
+  font-family:'Quicksand','Nunito',ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-weight:600; line-height:1.5;
+  background:linear-gradient(160deg,#fff5f9,#ffe3f0 55%,#ffd6ea); background-attachment:fixed;
+}
+body::before{
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.45;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg transform='translate(26 28) rotate(-14) scale(.5)' fill='%23ffb8d3'%3E%3Cpath d='M32 20C20 4 2 4 4 20c-2 16 16 16 28 0z'/%3E%3Cpath d='M32 20C44 4 62 4 60 20c2 16-16 16-28 0z'/%3E%3Cellipse cx='32' cy='20' rx='6' ry='7'/%3E%3C/g%3E%3Cg transform='translate(108 100) rotate(12) scale(.38)' fill='%23ffc9de'%3E%3Cpath d='M32 20C20 4 2 4 4 20c-2 16 16 16 28 0z'/%3E%3Cpath d='M32 20C44 4 62 4 60 20c2 16-16 16-28 0z'/%3E%3Cellipse cx='32' cy='20' rx='6' ry='7'/%3E%3C/g%3E%3Ctext x='96' y='34' font-size='14' fill='%23ffc4da'%3E%E2%99%A1%3C/text%3E%3Ctext x='30' y='128' font-size='12' fill='%23ffc4da'%3E%E2%9C%BF%3C/text%3E%3C/svg%3E");
+  background-size:160px;
+}
+h1,h2,h3,h4,.fred{font-family:'Fredoka','Quicksand',ui-rounded,system-ui,sans-serif; font-weight:600; margin:0}
+.float-layer{position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:0}
+.float-layer span{position:absolute; bottom:-50px; opacity:.6; animation:floatUp linear infinite; color:var(--pink)}
+.float-layer svg{display:block}
+@keyframes floatUp{
+  0%{transform:translateY(0) rotate(0deg); opacity:0}
+  10%{opacity:.65} 90%{opacity:.5}
+  100%{transform:translateY(-118vh) rotate(40deg); opacity:0}
+}
+.wrap{position:relative; z-index:1; max-width:780px; margin:0 auto; padding:16px 16px 70px}
+.topbar{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.brand{display:flex; align-items:center; gap:8px; font-family:'Fredoka',sans-serif; font-size:1.05rem; color:var(--pink-d); cursor:pointer; background:none; border:0; padding:4px 6px; border-radius:12px}
+.brand svg{width:34px; height:21px; color:var(--pink)}
+.brand:focus-visible,.btn:focus-visible,.opt:focus-within,summary:focus-visible,input[type=search]:focus-visible,.tc:focus-visible{outline:3px solid #ff9ec4; outline-offset:2px}
+.card{
+  background:var(--card); border:3px solid var(--pink-l); border-radius:28px;
+  box-shadow:var(--shadow); padding:26px 20px 22px; position:relative; margin-top:30px;
+}
+.card::before{
+  content:''; position:absolute; top:-25px; left:50%; width:66px; height:41px; transform:translateX(-50%);
+  background:var(--bow) center/contain no-repeat; filter:drop-shadow(0 3px 3px rgba(201,42,108,.25));
+}
+.hidden{display:none !important}
+
+/* buttons */
+.btn{
+  font-family:'Fredoka',sans-serif; font-size:1.05rem; font-weight:500; letter-spacing:.2px;
+  border:0; border-radius:999px; padding:13px 26px; cursor:pointer; color:#fff;
+  background:linear-gradient(135deg,var(--pink-m),var(--pink-d));
+  box-shadow:0 6px 0 #a61f58, 0 10px 18px rgba(201,42,108,.25);
+  transition:transform .12s ease, box-shadow .12s ease, filter .12s;
+}
+.btn:hover{transform:translateY(-2px); filter:brightness(1.05)}
+.btn:active{transform:translateY(4px); box-shadow:0 2px 0 #a61f58}
+.btn[disabled]{background:#f2c4d6; box-shadow:0 6px 0 #e3a9c0; cursor:not-allowed; transform:none; filter:none}
+.btn.soft{background:#fff; color:var(--pink-d); border:3px solid var(--pink-l); box-shadow:0 5px 0 var(--pink-l)}
+.btn.soft:active{box-shadow:0 1px 0 var(--pink-l)}
+.btn.small{font-size:.9rem; padding:8px 16px; box-shadow:0 4px 0 #a61f58}
+.btn.soft.small{box-shadow:0 4px 0 var(--pink-l)}
+.row{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.center{text-align:center; justify-content:center}
+
+/* home */
+.hero{text-align:center; padding:34px 18px 26px}
+.mascot{width:124px; height:124px; animation:bob 3s ease-in-out infinite; filter:drop-shadow(0 8px 10px rgba(255,111,165,.3))}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-8px) rotate(2deg)}}
+.hero h1{font-size:clamp(1.8rem,6vw,2.5rem); color:var(--pink-d); margin-top:4px}
+.sparkle{display:inline-block; animation:twinkle 2s ease-in-out infinite}
+@keyframes twinkle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.25) rotate(15deg)}}
+.hero p{color:var(--ink-soft); margin:8px auto 14px; max-width:480px}
+.flats{display:flex; justify-content:center; gap:6px; margin:2px 0 6px}
+.flats svg{width:58px; height:36px; color:var(--pink)}
+.flats svg:first-child{transform:rotate(-8deg)} .flats svg:last-child{transform:scaleX(-1) rotate(-8deg); color:#ff8fb8}
+.chips{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:8px 0 14px}
+.chip{background:var(--pink-xl); border:2px dashed var(--pink); color:var(--pink-d); padding:4px 12px; border-radius:999px; font-size:.85rem}
+.pick{margin:6px 0 4px; font-family:'Fredoka',sans-serif; color:var(--pink-d)}
+.tcs{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:12px}
+.tc{font-family:'Fredoka',sans-serif; font-size:.95rem; background:#fff; color:var(--pink-d); border:3px solid var(--pink-l); border-radius:999px; padding:6px 14px; cursor:pointer; transition:.12s}
+.tc:hover{border-color:var(--pink)}
+.tc.on{background:var(--pink-m); color:#fff; border-color:var(--pink-m)}
+.toggle{display:inline-flex; align-items:center; gap:8px; margin:4px 0 16px; cursor:pointer; color:var(--ink-soft)}
+.toggle input{accent-color:var(--pink-m); width:20px; height:20px}
+.best{margin-top:16px; color:var(--ink-soft); font-size:.95rem}
+
+/* quiz */
+.qhead{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:2px; font-family:'Fredoka',sans-serif; color:var(--pink-d)}
+.barwrap{position:relative; padding-top:20px; margin-bottom:16px}
+.bar{height:16px; background:var(--pink-xl); border:2px solid var(--pink-l); border-radius:999px; overflow:hidden}
+.bar > div{height:100%; width:0; background:repeating-linear-gradient(45deg,#ff8fb8 0 12px,#ff6fa5 12px 24px); border-radius:999px; transition:width .4s ease}
+.walker{position:absolute; top:-4px; left:3%; width:36px; height:23px; color:var(--pink-d); transform:translateX(-50%); transition:left .4s ease; animation:step .6s ease-in-out infinite}
+@keyframes step{0%,100%{margin-top:0}50%{margin-top:-3px}}
+.qtag{display:inline-block; font-size:.75rem; font-family:'Fredoka',sans-serif; background:var(--lilac); color:var(--lilac-ink); border-radius:999px; padding:1px 10px; margin-bottom:6px}
+.qtext{font-size:1.15rem; font-weight:700; margin:0 0 6px; outline:none}
+.sata{display:inline-block; background:var(--butter); border:2px solid var(--butter-b); color:var(--butter-ink); border-radius:999px; font-size:.8rem; padding:2px 12px; margin:6px 0 4px}
+.opts{display:flex; flex-direction:column; gap:12px; margin:16px 0}
+.opt{
+  display:block; border:3px solid var(--pink-l); background:var(--pink-xl); border-radius:20px; padding:12px 14px;
+  cursor:pointer; transition:transform .12s, border-color .12s, background .12s; position:relative;
+}
+.opt:hover{transform:translateY(-2px); border-color:var(--pink)}
+.opt.sel{border-color:var(--pink-m); background:#ffe1ee}
+.opt .line{display:flex; gap:12px; align-items:flex-start}
+.opt input{position:absolute; opacity:0; pointer-events:none}
+.mark{flex:none; width:26px; height:26px; border:3px solid var(--pink); background:#fff; margin-top:1px; display:grid; place-items:center; font-size:.85rem; color:#fff; transition:.15s}
+.mark.r{border-radius:50%} .mark.c{border-radius:8px}
+.opt.sel .mark{background:var(--pink-m); border-color:var(--pink-m)}
+.opt.sel .mark::after{content:'♥'}
+.opt .txt{flex:1}
+.opt .tag{display:inline-block; font-family:'Fredoka',sans-serif; font-weight:500; font-size:.78rem; letter-spacing:.5px; padding:1px 10px; border-radius:999px; margin-top:8px}
+.opts.locked .opt{cursor:default; transform:none}
+.opt.good{background:var(--mint); border-color:var(--mint-b)}
+.opt.good .tag{background:var(--mint-b); color:#0e3b2a}
+.opt.good .mark{background:var(--mint-b); border-color:var(--mint-b)} .opt.good .mark::after{content:'✓'}
+.opt.bad{background:var(--rose); border-color:var(--rose-b)}
+.opt.bad .tag{background:var(--rose-b); color:#fff}
+.opt.bad .mark{background:var(--rose-b); border-color:var(--rose-b)} .opt.bad .mark::after{content:'✕'}
+.opt.missed{background:var(--butter); border-color:var(--butter-b); border-style:dashed}
+.opt.missed .tag{background:var(--butter-b); color:#4a3200}
+.opt.missed .mark{border-color:var(--butter-b)}
+.banner{border-radius:20px; padding:12px 16px; font-family:'Fredoka',sans-serif; font-size:1.1rem; display:flex; gap:10px; align-items:center; margin-top:4px; animation:pop .35s ease}
+@keyframes pop{0%{transform:scale(.85); opacity:0}100%{transform:scale(1); opacity:1}}
+.banner.correct{background:var(--mint); color:var(--mint-ink); border:3px solid var(--mint-b)}
+.banner.partial{background:var(--butter); color:var(--butter-ink); border:3px solid var(--butter-b)}
+.banner.incorrect{background:var(--rose); color:var(--rose-ink); border:3px solid var(--rose-b)}
+.rationale{margin-top:12px; border:3px dashed var(--pink); background:var(--pink-xl); border-radius:20px; padding:14px 16px}
+.rationale h4{margin:0 0 4px; font-family:'Fredoka',sans-serif; color:var(--pink-d); font-weight:500}
+.rationale p{margin:0}
+.actions{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:18px; flex-wrap:wrap}
+
+/* results */
+.ring{width:160px; height:160px; border-radius:50%; margin:6px auto 12px; display:grid; place-items:center;
+  background:conic-gradient(var(--pink-m) calc(var(--p)*1%), var(--pink-l) 0)}
+.ring > div{width:124px; height:124px; border-radius:50%; background:#fff; display:grid; place-items:center; text-align:center}
+.ring b{font-family:'Fredoka',sans-serif; font-size:2rem; color:var(--pink-d); display:block; line-height:1}
+.ring small{color:var(--ink-soft)}
+.res-list{list-style:none; padding:0; margin:14px 0 0; display:flex; flex-direction:column; gap:8px}
+.res-list li{display:flex; gap:10px; align-items:center; padding:8px 12px; border-radius:16px; border:2px solid var(--pink-l); background:var(--pink-xl); font-size:.92rem}
+.pill{flex:none; font-family:'Fredoka',sans-serif; font-size:.75rem; padding:2px 10px; border-radius:999px; color:#fff}
+.pill.correct{background:var(--mint-b); color:#0e3b2a} .pill.partial{background:var(--butter-b); color:#4a3200} .pill.incorrect{background:var(--rose-b)}
+.res-list .q{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
+/* guide + bank */
+.search{width:100%; border:3px solid var(--pink-l); border-radius:999px; padding:12px 18px; font:inherit; color:var(--ink); background:#fff; margin:6px 0 12px}
+details{border:3px solid var(--pink-l); border-radius:22px; background:#fff; margin-bottom:12px; overflow:hidden}
+details[open]{border-color:var(--pink)}
+summary{cursor:pointer; padding:14px 16px; list-style:none; display:flex; gap:10px; align-items:flex-start; font-weight:700}
+summary::-webkit-details-marker{display:none}
+summary .n{flex:none; background:var(--pink-m); color:#fff; font-family:'Fredoka',sans-serif; border-radius:999px; min-width:34px; height:34px; padding:0 6px; display:grid; place-items:center; font-size:.9rem}
+.sbody{padding:0 16px 16px}
+.sopt{padding:8px 12px; border-radius:14px; margin:8px 0; border:2px solid var(--pink-l); background:var(--pink-xl)}
+.sopt.ok{background:var(--mint); border-color:var(--mint-b)}
+.empty{text-align:center; color:var(--ink-soft); padding:20px}
+.g-sum{font-family:'Fredoka',sans-serif; font-size:1.08rem; color:var(--pink-d); align-items:center}
+.g-sum .em{font-size:1.4rem}
+.ribbon{display:inline-block; font-family:'Fredoka',sans-serif; font-weight:500; font-size:.72rem; letter-spacing:.4px; padding:2px 10px; border-radius:999px; margin:0 0 8px}
+.ribbon.inst{background:var(--pink-m); color:#fff}
+.ribbon.extra{background:var(--lilac); color:var(--lilac-ink); border:2px solid var(--lilac-b)}
+.gbody ul{margin:6px 0 10px; padding-left:22px}
+.gbody li{margin:5px 0}
+.gbody h4{color:var(--pink-d); font-weight:500; margin:12px 0 2px}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:8px 0}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.box{border:3px solid var(--pink-l); background:var(--pink-xl); border-radius:18px; padding:10px 14px}
+.box h4{margin-top:0}
+.box.l{background:#fff0f7} .box.r{background:var(--lilac); border-color:var(--lilac-b)} .box.r h4{color:var(--lilac-ink)}
+.tip{background:var(--lilac); border:2px dashed var(--lilac-b); color:var(--lilac-ink); border-radius:14px; padding:8px 12px; margin:8px 0; font-size:.93rem}
+.tip::before{content:'🌷 Extra: '; font-family:'Fredoka',sans-serif}
+.drug{border:3px solid var(--pink-l); border-radius:18px; padding:10px 14px; margin:10px 0; background:#fff}
+.drug h4{margin:0 0 2px !important; display:flex; align-items:center; gap:8px}
+.drug h4 svg{width:26px; height:16px; color:var(--pink)}
+table.bp{width:100%; border-collapse:separate; border-spacing:0 6px; font-size:.95rem}
+table.bp td,table.bp th{padding:6px 10px; text-align:left}
+table.bp th{font-family:'Fredoka',sans-serif; font-weight:500; color:var(--pink-d)}
+table.bp td{background:var(--pink-xl)} table.bp td:first-child{border-radius:12px 0 0 12px} table.bp td:last-child{border-radius:0 12px 12px 0}
+
+.confetti{position:fixed; top:-30px; z-index:5; pointer-events:none; animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg); opacity:.8}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important; transition:none !important}
+  .float-layer{display:none}
+}
+@media (max-width:480px){ .card{padding:24px 14px 18px; border-radius:24px} .btn{padding:12px 20px} }
+</style>
+</head>
+<body>
+<!-- shared drawings: bow + ballet flat -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="bow" viewBox="0 0 64 40">
+      <path d="M32 20C20 4 2 4 4 20c-2 16 16 16 28 0z" fill="currentColor"/>
+      <path d="M32 20C44 4 62 4 60 20c2 16-16 16-28 0z" fill="currentColor"/>
+      <path d="M30 26 20 38l8-2 4-8zM34 26l10 12-8-2-4-8z" fill="currentColor" opacity=".8"/>
+      <ellipse cx="32" cy="20" rx="6" ry="7" fill="currentColor"/>
+      <path d="M12 16c4-5 10-6 15-2M52 16c-4-5-10-6-15-2" stroke="#fff" stroke-opacity=".55" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="32" cy="20" rx="6" ry="7" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="flat" viewBox="0 0 80 50">
+      <path d="M5 33C5 21 7 12 14 12c6 0 8 9 17 11 12 3 24 1 34 6 9 4 14 11 7 15-5 3-17 3-33 3-14 0-20-1-24-3-4-2-6-6-6-11z" fill="currentColor"/>
+      <path d="M14 12c6 0 8 9 17 11" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M7 44c8 3 14 3 30 3 16 0 27 0 34-4" fill="none" stroke="#7a1a45" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+      <use href="#bow" x="36" y="17" width="24" height="15" style="color:#fff5fa"/>
+    </symbol>
+  </defs>
+</svg>
+<div class="float-layer" id="floaty" aria-hidden="true"></div>
+
+<div class="wrap">
+  <div class="topbar">
+    <button class="brand" id="homeBtn" aria-label="Go to home"><svg viewBox="0 0 64 40"><use href="#bow"/></svg> Test 4 Study Garden</button>
+    <button class="btn soft small" id="guideTop">📖 Study guide</button>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="card hero">
+    <svg class="mascot" viewBox="0 0 120 120" aria-hidden="true">
+      <ellipse cx="42" cy="26" rx="11" ry="24" fill="#fff" stroke="#ff8fb8" stroke-width="3"/>
+      <ellipse cx="42" cy="30" rx="5" ry="15" fill="#ffc2d9"/>
+      <ellipse cx="78" cy="26" rx="11" ry="24" fill="#fff" stroke="#ff8fb8" stroke-width="3" transform="rotate(8 78 26)"/>
+      <ellipse cx="78" cy="30" rx="5" ry="15" fill="#ffc2d9" transform="rotate(8 78 30)"/>
+      <use href="#bow" x="68" y="6" width="34" height="21" style="color:#ff6fa5"/>
+      <circle cx="60" cy="72" r="38" fill="#fff" stroke="#ff8fb8" stroke-width="3"/>
+      <path d="M38 50 Q60 28 82 50 Q60 42 38 50Z" fill="#fff" stroke="#ff8fb8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M60 47 c-3-4-9-1-6 3 l6 5 l6-5 c3-4-3-7-6-3z" fill="#ff6fa5" transform="translate(0,-6)"/>
+      <circle cx="47" cy="72" r="5" fill="#5a2a41"/><circle cx="73" cy="72" r="5" fill="#5a2a41"/>
+      <circle cx="48.8" cy="70.2" r="1.7" fill="#fff"/><circle cx="74.8" cy="70.2" r="1.7" fill="#fff"/>
+      <ellipse cx="38" cy="82" rx="7" ry="4.5" fill="#ffb3cf"/><ellipse cx="82" cy="82" rx="7" ry="4.5" fill="#ffb3cf"/>
+      <path d="M54 82 Q57 87 60 82 Q63 87 66 82" fill="none" stroke="#5a2a41" stroke-width="2.6" stroke-linecap="round"/>
+    </svg>
+    <div class="flats" aria-hidden="true"><svg viewBox="0 0 80 50"><use href="#flat"/></svg><svg viewBox="0 0 80 50"><use href="#flat"/></svg></div>
+    <h1>Test 4 Study Garden <span class="sparkle">🎀</span></h1>
+    <p>Heart Failure &amp; Hypertension · 50 NCLEX-style questions with a rationale for every answer. You've got this, future nurse! ♡</p>
+    <div class="chips">
+      <span class="chip">50 questions</span><span class="chip">select-all-that-apply</span><span class="chip">instructor notes inside</span>
+    </div>
+    <div class="pick">Pick a topic:</div>
+    <div class="tcs" id="topicChips" role="group" aria-label="Topic"></div>
+    <label class="toggle"><input type="checkbox" id="shuffle"> Shuffle question order 🔀</label>
+    <div class="row center">
+      <button class="btn" id="startBtn">Start practice test 🩰</button>
+      <button class="btn soft" id="guideBtn">Study guide 📖</button>
+      <button class="btn soft" id="bankBtn">All answers 💗</button>
+    </div>
+    <div class="best" id="best"></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="card hidden" aria-live="polite">
+    <div class="qhead"><span id="qcount">Question 1 of 50</span><span id="tally">♡ 0</span></div>
+    <div class="barwrap">
+      <svg class="walker" id="walker" viewBox="0 0 80 50" aria-hidden="true"><use href="#flat"/></svg>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="barOuter"><div id="barIn"></div></div>
+    </div>
+    <span class="qtag" id="qtag"></span>
+    <h2 class="qtext" id="qtext" tabindex="-1"></h2>
+    <div id="sata"></div>
+    <div class="opts" id="opts"></div>
+    <div id="feedback"></div>
+    <div class="actions">
+      <button class="btn soft small" id="quitBtn">Exit</button>
+      <button class="btn" id="checkBtn" disabled>Check answer</button>
+      <button class="btn hidden" id="nextBtn">Continue →</button>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="card hidden center">
+    <h2 style="color:var(--pink-d);font-size:1.7rem" id="resTitle">All done!</h2>
+    <div class="ring" id="ring" style="--p:0"><div><span><b id="resPct">0%</b><small id="resPts"></small></span></div></div>
+    <p id="resMsg" style="margin:4px 0 14px"></p>
+    <div class="row center">
+      <button class="btn" id="retryBtn">Try again 🔁</button>
+      <button class="btn soft" id="missedBtn">Retake missed 🎯</button>
+      <button class="btn soft" id="resGuide">Study guide 📖</button>
+    </div>
+    <ul class="res-list" id="resList" style="text-align:left"></ul>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide" class="card hidden">
+    <h2 style="color:var(--pink-d);font-size:1.5rem">Study guide 📖</h2>
+    <p style="margin:4px 0 14px;color:var(--ink-soft)">Pink ribbons = notes from your instructor. Lilac ribbons 🌷 = extra review I added.</p>
+
+    <details open>
+      <summary class="g-sum"><span class="em">💗</span> Heart failure basics</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <ul>
+          <li>Know the <b>definition of heart failure</b></li>
+          <li><b>HTN and CAD</b> can strain the heart and lead to HF</li>
+          <li>Risk factors: <b>obesity, smoking, diabetes</b></li>
+        </ul>
+        <div class="tip">Definition: the heart can't pump enough blood to meet the body's needs. It does not mean the heart has stopped.</div>
+      </div>
+    </details>
+
+    <details open>
+      <summary class="g-sum"><span class="em">🫀</span> Left vs right-sided HF</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <div class="two">
+          <div class="box l"><h4>Left-sided</h4><ul>
+            <li>Dyspnea</li><li>Orthopnea</li><li>Pink frothy sputum</li><li>PE (pulmonary edema)</li><li>Crackles</li></ul></div>
+          <div class="box r"><h4>Right-sided</h4><p style="margin:0">Backfills to the body</p><ul>
+            <li>Dependent edema</li><li>JVD</li><li>Increased abdominal girth</li></ul></div>
+        </div>
+        <ul><li><b>Biventricular HF</b> = both sides</li></ul>
+        <div class="tip">Memory trick: Left = Lungs. Right = the rest of the body (Rest of body).</div>
+      </div>
+    </details>
+
+    <details>
+      <summary class="g-sum"><span class="em">🩺</span> Assessing &amp; what to do</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <ul>
+          <li>Ask: <i>“Do you have to sit up when you're sleeping? How many pillows do you use at night?”</i></li>
+          <li><b>New or worsening dyspnea:</b> check work of breathing (assess O₂, lung sounds, breath quality: shallow? deep?)</li>
+          <li><b>Acute respiratory distress:</b> sit the patient upright if SOB, give O₂ as needed</li>
+          <li>Monitor: <b>I&amp;O, weight gain, edema, oxygenation</b>, changes in breath sounds, adventitious breath sounds</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary class="g-sum"><span class="em">🏡</span> Teaching (at home)</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <ul>
+          <li><b>Weigh after urination</b></li>
+          <li>Report <b>rapid weight gain, increased swelling, and SOB</b></li>
+          <li>Stick to prescribed <b>salt/fluid goals</b> (look for sodium per serving)</li>
+          <li><b>Oxygen maintenance:</b> don't smoke near the tank</li>
+        </ul>
+        <div class="tip">Best habit: same scale, same time each morning (after urinating, before eating), similar clothing.</div>
+      </div>
+    </details>
+
+    <details open>
+      <summary class="g-sum"><span class="em">💊</span> Medications</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <div class="drug"><h4><svg viewBox="0 0 64 40"><use href="#bow"/></svg> Beta blockers</h4><ul>
+          <li>Drop BP and HR</li>
+          <li>Can cause <b>bronchospasm</b> in patients with <b>asthma</b></li>
+          <li><b>Orthostatic hypotension</b> → fall risk</li></ul></div>
+        <div class="drug"><h4><svg viewBox="0 0 64 40"><use href="#bow"/></svg> “-prils” (ACE inhibitors)</h4><ul>
+          <li>Check <b>potassium and kidney function</b></li>
+          <li><b>Angioedema</b>: not an allergic reaction, it's an <b>adverse reaction</b></li></ul>
+          <div class="tip">Angioedema can close the airway: protect the airway and call the provider right away. ACE inhibitors raise potassium (hyperkalemia).</div></div>
+        <div class="drug"><h4><svg viewBox="0 0 64 40"><use href="#bow"/></svg> Furosemide</h4><ul>
+          <li>Removes excess sodium</li>
+          <li>Monitor <b>weight, BP, kidney function, electrolytes</b></li>
+          <li><b>K⁺:</b> know the symptoms of <b>hypokalemia</b> (constipation, dysrhythmias, palpitations)</li>
+          <li>Also watch <b>Mg</b></li></ul>
+          <div class="tip">It also removes water, which is why it helps with fluid overload. Good sign it's working: more urine, fewer crackles, weight down.</div></div>
+        <div class="drug"><h4><svg viewBox="0 0 64 40"><use href="#bow"/></svg> Digoxin</h4><ul>
+          <li>Toxicity: <b>nausea, yellow/green halos, anorexia, new appetite loss, low HR</b></li>
+          <li>Check <b>apical pulse before</b> giving</li>
+          <li>Check <b>kidney function, electrolytes</b>; if labs are available, look at <b>potassium</b></li>
+          <li>If HR is <b>61</b>, you can still give digoxin</li></ul>
+          <div class="tip">The usual cutoff is to hold if the apical pulse is under 60 (check your facility policy). Low potassium makes digoxin toxicity more likely.</div></div>
+      </div>
+    </details>
+
+    <details>
+      <summary class="g-sum"><span class="em">🔧</span> Procedures &amp; tests</summary>
+      <div class="sbody gbody">
+        <span class="ribbon inst">📝 From your instructor</span>
+        <ul>
+          <li><b>Cardioversion:</b> helps restore irregular rhythm (usually a fast-paced arrhythmia)</li>
+          <li><b>Pacemaker:</b> CRT / ICD</li>
+          <li><b>Percutaneous insertion of a balloon, aortic balloon</b></li>
+          <li><b>Echocardiogram</b></li>
+        </ul>
+        <div class="tip">Cardioversion = a synchronized shock. CRT = biventricular pacing so both ventricles squeeze together. ICD = detects dangerous rhythms and shocks or paces. Echo = ultrasound of the heart's structure and pumping (ejection fraction).</div>
+      </div>
+    </details>
+
+    <details>
+      <summary class="g-sum"><span class="em">🩰</span> Hypertension quick review</summary>
+      <div class="sbody gbody">
+        <span class="ribbon extra">🌷 Extra review</span>
+        <table class="bp" aria-label="Adult blood pressure categories (AHA/ACC)">
+          <tr><th>Adult category</th><th>Systolic</th><th>Diastolic</th></tr>
+          <tr><td>Normal</td><td>&lt; 120</td><td>and &lt; 80</td></tr>
+          <tr><td>Elevated</td><td>120–129</td><td>and &lt; 80</td></tr>
+          <tr><td>Stage 1</td><td>130–139</td><td>or 80–89</td></tr>
+          <tr><td>Stage 2</td><td>≥ 140</td><td>or ≥ 90</td></tr>
+          <tr><td>Crisis</td><td>&gt; 180</td><td>and/or &gt; 120</td></tr>
+        </table>
+        <ul>
+          <li><b>Urgency:</b> crisis-level BP <u>without</u> new organ damage. <b>Emergency:</b> crisis-level BP <u>with</u> organ damage (headache, vision changes, confusion, chest pain, SOB). Emergency = IV meds with continuous monitoring, lowering BP gradually.</li>
+          <li><b>Target organ damage:</b> brain (stroke), heart (LVH, MI, HF), kidneys (↑ creatinine), eyes (retinopathy, papilledema)</li>
+          <li><b>Nonmodifiable risks:</b> age, family history, ethnicity. <b>Modifiable:</b> obesity, smoking, sodium, alcohol, inactivity</li>
+          <li><b>Lifestyle:</b> DASH or Mediterranean-style eating, sodium under 2,300 mg/day, aerobic exercise, limit alcohol, quit smoking, weight loss</li>
+          <li>Take BP meds even when feeling fine. If BP stays high, first ask how and when meds are taken</li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="row center" style="margin-top:14px">
+      <button class="btn" id="guideStart">Take the practice test 🩰</button>
+      <button class="btn soft" id="guideBank">All answers 💗</button>
+    </div>
+  </section>
+
+  <!-- BANK -->
+  <section id="bank" class="card hidden">
+    <h2 style="color:var(--pink-d);font-size:1.5rem">All questions &amp; answers 💗</h2>
+    <p style="margin:4px 0 0;color:var(--ink-soft)">Tap a question to see the correct answer(s) in green plus the rationale.</p>
+    <input class="search" id="search" type="search" placeholder="Search a topic… (digoxin, orthopnea, crisis) 🔍" aria-label="Search questions">
+    <div class="tcs" id="bankChips" style="justify-content:flex-start"></div>
+    <div id="bankList"></div>
+    <div class="row center" style="margin-top:12px"><button class="btn" id="bankStart">Take the practice test 🩰</button></div>
+  </section>
+</div>
+
+<script>
+/* ---------- QUESTION BANK: 50 NCLEX-style questions ---------- */
+const T=(topic,q,opts,c,r)=>({topic,q,r,type:c.length>1?'multi':'single',opts:opts.map((t,i)=>({t,ok:c.includes(i)}))});
+const TOPICS={all:'All 50 🎀',hf:'Heart failure',meds:'Medications',htn:'Hypertension'};
+
+const Q=[
+/* ===== HEART FAILURE (1-23) ===== */
+/* 1 */ T('hf',"A client with heart failure tells the nurse, “I can only sleep if I prop myself up on three pillows.” The nurse documents this finding as:",
+ ["Paroxysmal nocturnal dyspnea","Orthopnea","Dyspnea on exertion","Pulmonary edema"],[1],
+ "Orthopnea is shortness of breath when lying flat that is relieved by sitting up; the number of pillows needed measures how severe it is. Paroxysmal nocturnal dyspnea is suddenly waking from sleep short of breath, dyspnea on exertion happens with activity, and pulmonary edema is the fluid-filled-lung condition rather than the symptom described."),
+/* 2 */ T('hf',"Which findings would the nurse expect in a client with LEFT-sided heart failure?",
+ ["Dyspnea","Crackles in the lung bases","Jugular vein distention","Pink, frothy sputum","Dependent edema","Orthopnea","Increased abdominal girth"],[0,1,3,5],
+ "When the left ventricle can't move blood forward, blood backs up into the lungs: dyspnea, orthopnea, crackles, and pink frothy sputum (pulmonary edema). JVD, dependent edema, and increased abdominal girth happen when blood backs up into the body in right-sided failure."),
+/* 3 */ T('hf',"Which findings would the nurse expect in a client with RIGHT-sided heart failure?",
+ ["Jugular vein distention","Pink, frothy sputum","Dependent edema","Crackles throughout the lungs","Increased abdominal girth","Orthopnea"],[0,2,4],
+ "In right-sided failure the right ventricle can't push blood to the lungs, so blood backfills into the systemic veins: JVD, dependent edema, liver and abdominal congestion (increased girth). Pink frothy sputum, crackles, and orthopnea are left-sided findings."),
+/* 4 */ T('hf',"A client with hypertension and coronary artery disease asks why these conditions can lead to heart failure. Which response by the nurse is most accurate?",
+ ["They make the heart work harder or get less blood, which strains and weakens the heart muscle over time","They cause the heart valves to become too tight","They stop the kidneys from making urine","They cause the lungs to stiffen and fill with mucus first"],[0],
+ "Hypertension forces the ventricle to pump against higher resistance, and CAD reduces the blood and oxygen supply to the heart muscle. Over time the muscle weakens or stiffens and can no longer pump effectively. The other options are not the main mechanism."),
+/* 5 */ T('hf',"Which factors increase a client's risk for developing heart failure?",
+ ["Obesity","Smoking","Diabetes mellitus","Regular aerobic exercise","A low-sodium eating plan","Hypertension"],[0,1,2,5],
+ "Obesity, smoking, diabetes, and hypertension (and CAD) all strain the heart or damage blood vessels. Regular exercise and a low-sodium eating plan are protective."),
+/* 6 */ T('hf',"A client with heart failure reports new, worsening shortness of breath while sitting in a chair. The client is alert and speaking in full sentences. Which action should the nurse take first?",
+ ["Assess oxygen saturation, lung sounds, and the quality of the client's breathing","Give the next scheduled furosemide dose early","Encourage the client to drink more fluids to thin secretions","Document the finding and reassess at the end of the shift"],[0],
+ "New or worsening dyspnea means check the work of breathing first: SpO₂, lung sounds, and whether breathing is shallow, deep, or labored. This tells the nurse how serious it is and what to do next. Giving a medication early needs an order, extra fluids worsen overload, and waiting is unsafe."),
+/* 7 */ T('hf',"A client with heart failure suddenly becomes very short of breath and anxious, with an SpO₂ of 86% on room air. Which action should the nurse perform first?",
+ ["Sit the client upright and apply oxygen as prescribed/per protocol","Obtain a 12-lead ECG","Lay the client flat to rest","Give an oral dose of furosemide with water"],[0],
+ "In acute respiratory distress the first priority is breathing: sitting upright lets the diaphragm drop and decreases venous return to the heart, and oxygen corrects hypoxemia. Then notify the provider. Lying flat worsens dyspnea, and an ECG or oral medication would delay care."),
+/* 8 */ T('hf',"Which finding best indicates worsening fluid volume excess in a client with heart failure?",
+ ["A weight gain of 3 lb (1.4 kg) since yesterday","A weight loss of 1 lb after receiving a diuretic","Urine output of 100 mL/hr after furosemide","Clear lung sounds in all lobes"],[0],
+ "Rapid weight gain (about 2–3 lb in a day or 5 lb in a week) signals fluid retention, since 1 L of fluid weighs about 1 kg (2.2 lb). The other findings show the diuretic is working or that the client is stable."),
+/* 9 */ T('hf',"Which statement by a client with heart failure indicates correct understanding of home weight monitoring?",
+ ["“I will weigh myself every morning after I urinate, before I eat.”","“I will weigh myself in the evening after dinner.”","“I will weigh myself once a week on Mondays.”","“I will call only if I gain 10 pounds.”"],[0],
+ "Weighing at the same time every morning after urinating and before eating, on the same scale, gives the most reliable trend. Weekly weights miss rapid changes, and waiting for a 10 lb gain is dangerous: report rapid gain, more swelling, or shortness of breath."),
+/* 10 */ T('hf',"Which instructions should the nurse include in discharge teaching for a client with heart failure?",
+ ["Weigh yourself each morning after you urinate","Report rapid weight gain, increased swelling, or shortness of breath","Follow your prescribed sodium and fluid goals and check the sodium per serving on food labels","Do not smoke or allow smoking near your oxygen tank","Stop your medications once the swelling goes away","Use a potassium-based salt substitute freely in place of table salt"],[0,1,2,3],
+ "Daily weights, symptom reporting, salt/fluid goals, and oxygen safety are core teaching. Heart failure is chronic, so medications continue even when symptoms improve. Salt substitutes contain potassium chloride, which can be dangerous with ACE inhibitors or kidney problems unless the provider approves."),
+/* 11 */ T('hf',"A client with heart failure will use oxygen at home. Which instruction has the highest priority for safety?",
+ ["Do not allow smoking or open flames near the oxygen","Turn the flow up whenever you feel short of breath","Store the oxygen tank lying flat in a warm car","Apply petroleum jelly inside the nostrils for dryness"],[0],
+ "Oxygen supports combustion, so no smoking or open flames near the tank. Flow should only be changed as prescribed, tanks should be secured upright away from heat, and petroleum-based products are flammable (use a water-based lubricant)."),
+/* 12 */ T('hf',"Which question would best help the nurse assess a client for orthopnea?",
+ ["“Do you have to sit up to sleep, and how many pillows do you use at night?”","“Do you get chest pain when you climb stairs?”","“How much fluid do you drink in a day?”","“Have you noticed your ankles swelling?”"],[0],
+ "Orthopnea is breathlessness when lying flat, so asking about sitting up to sleep and the number of pillows targets it directly. The other questions assess angina, fluid intake, and edema."),
+/* 13 */ T('hf',"A client with heart failure has fine crackles in both lung bases. This finding most likely indicates:",
+ ["Fluid in the alveoli from pulmonary congestion","Bronchospasm and airway narrowing","A pleural friction rub","Normal air movement at the bases"],[0],
+ "Crackles are adventitious sounds from air moving through fluid-filled small airways and alveoli, a sign of left-sided failure and pulmonary congestion. Bronchospasm causes wheezes, and a pleural rub sounds like creaking leather."),
+/* 14 */ T('hf',"Which statement best describes biventricular heart failure?",
+ ["Both sides of the heart fail, causing lung congestion and systemic edema","Only the left ventricle fails to pump forward","The heart valves fail to open fully","The heart beats irregularly and too fast"],[0],
+ "In biventricular failure the left and right ventricles both fail, so the client can have crackles and orthopnea plus JVD, dependent edema, and abdominal girth."),
+/* 15 */ T('hf',"Which statement best defines heart failure?",
+ ["The heart cannot pump enough blood to meet the body's needs","The heart has completely stopped beating","A coronary artery is blocked, causing heart muscle death","Blood flows backward through one heart valve only"],[0],
+ "Heart failure means the heart can't pump enough blood to meet the body's metabolic needs. It does not mean the heart has stopped. A blocked coronary artery describes myocardial infarction."),
+/* 16 */ T('hf',"A client with heart failure received IV furosemide 2 hours ago. Which finding best indicates the medication is effective?",
+ ["Urine output increased and crackles decreased","Weight increased by 2 lb","Jugular vein distention is more pronounced","Heart rate increased from 80 to 110 beats/min"],[0],
+ "Effective diuresis removes excess fluid: more urine, fewer crackles, decreased weight, and less edema/JVD. Weight gain, more JVD, or a rising heart rate suggest worsening overload or a new problem."),
+/* 17 */ T('hf',"Which client should the nurse assess first?",
+ ["A client with heart failure and +2 ankle edema who is resting comfortably","A client with heart failure who has new crackles, SpO₂ 88% on room air, and is restless","A client with hypertension, BP 146/90 mm Hg, who needs discharge teaching","A client taking digoxin with an apical pulse of 68 who is asking for a snack"],[1],
+ "Airway, breathing, and circulation come first. New crackles with low oxygen saturation and restlessness suggest acute pulmonary edema, which is life threatening. The other clients are stable."),
+/* 18 */ T('hf',"Which assessments are most important when monitoring a client with heart failure?",
+ ["Intake and output","Daily weight","Peripheral edema","Oxygen saturation","Breath sounds, including adventitious sounds","Serum bilirubin each day","Pupil reaction every hour"],[0,1,2,3,4],
+ "Fluid balance (I&O, weight, edema) and oxygenation/lung status (SpO₂, changes in breath sounds) show whether fluid is building up. Bilirubin and hourly pupil checks are not routine for heart failure."),
+/* 19 */ T('hf',"Why does a client with right-sided heart failure develop increased abdominal girth?",
+ ["Blood backs up into the systemic veins, causing liver congestion and fluid in the abdomen","Blood backs up into the pulmonary veins and enters the stomach","The kidneys retain potassium, causing the abdomen to swell","The left ventricle stretches the abdominal muscles"],[0],
+ "Right-sided failure causes blood to back up into the venous system, congesting the liver and GI tract and allowing fluid to collect in the abdomen (ascites), along with JVD and dependent edema."),
+/* 20 */ T('hf',"The nurse prepares a client with heart failure for an echocardiogram. Which explanation is correct?",
+ ["Sound waves create images of the heart's structure and how well it pumps","The test records the heart's electrical activity for 24 hours","Dye is injected into the coronary arteries to find blockages","A balloon is placed in the aorta to help the heart pump"],[0],
+ "An echocardiogram is a noninvasive ultrasound that shows chamber size, valves, and pumping function (ejection fraction). Electrical recording describes an ECG or Holter, and dye in the coronary arteries describes a cardiac catheterization."),
+/* 21 */ T('hf',"A client is scheduled for cardioversion. Which description should the nurse give?",
+ ["A synchronized electrical shock is delivered to restore a regular rhythm","A permanent device is implanted to pace the heart","A balloon opens a narrowed coronary artery","Fluid is drained from around the heart"],[0],
+ "Cardioversion uses a synchronized shock to restore a normal rhythm in an irregular, usually fast arrhythmia (such as atrial fibrillation). Pacemaker implantation, angioplasty, and pericardiocentesis are different procedures."),
+/* 22 */ T('hf',"The nurse teaches a client with heart failure about an implantable cardioverter-defibrillator (ICD). Which statement is correct?",
+ ["It detects life-threatening rhythms and delivers pacing or a shock to correct them","It replaces a damaged heart valve","It lowers blood pressure by relaxing blood vessels","It measures daily weight and sodium intake"],[0],
+ "An ICD constantly monitors the rhythm and treats dangerous ventricular arrhythmias with pacing or a shock, which helps prevent sudden cardiac death in some clients with heart failure."),
+/* 23 */ T('hf',"A client with heart failure is receiving cardiac resynchronization therapy (CRT). Which statement describes how it works?",
+ ["Both ventricles are paced so they contract together, improving pumping efficiency","It shocks the heart only when ventricular fibrillation occurs","It removes fluid from the lungs","It increases the heart rate to 150 beats/min"],[0],
+ "CRT (biventricular pacing) coordinates contraction of the left and right ventricles so the heart pumps more effectively. Delivering a shock for ventricular fibrillation describes an ICD."),
+
+/* ===== MEDICATIONS (24-35) ===== */
+/* 24 */ T('meds',"A client with heart failure and a history of asthma is prescribed carvedilol. Which adverse effect should the nurse monitor for most closely?",
+ ["Bronchospasm","Tinnitus","Photosensitivity","Hypercalcemia"],[0],
+ "Beta blockers can block beta-2 receptors in the lungs and cause bronchospasm in clients with asthma. They also lower BP and heart rate and can cause orthostatic hypotension."),
+/* 25 */ T('meds',"A client is starting metoprolol. Which instructions should the nurse include?",
+ ["Rise slowly from a lying or sitting position","Check your pulse and blood pressure as instructed","Report new wheezing or difficulty breathing","Do not stop the medication suddenly","Double the next dose if you miss one","Expect your heart rate to increase after starting it"],[0,1,2,3],
+ "Beta blockers lower BP and HR, so teach slow position changes (orthostatic hypotension and fall risk), monitoring, reporting breathing problems, and never stopping abruptly. Never double doses, and the heart rate should decrease, not increase."),
+/* 26 */ T('meds',"A client taking lisinopril reports swelling of the lips and tongue. Which action should the nurse take first?",
+ ["Assess the airway and call for immediate help/notify the provider","Give the next dose with food","Document a mild allergic reaction and continue the medication","Apply a cold pack to the lips"],[0],
+ "Angioedema from ACE inhibitors (a “-pril”) is an adverse reaction, not a true allergic reaction, but it can obstruct the airway. Protect the airway, hold the medication, and get emergency help right away."),
+/* 27 */ T('meds',"A client takes an ACE inhibitor for heart failure. Which laboratory result should the nurse report immediately?",
+ ["Potassium 5.9 mEq/L","Sodium 138 mEq/L","Calcium 9.2 mg/dL","Hemoglobin 13 g/dL"],[0],
+ "ACE inhibitors reduce aldosterone, causing potassium retention. A potassium of 5.9 (normal about 3.5–5.0) is hyperkalemia and can cause dangerous dysrhythmias. Kidney function should also be monitored. The other values are normal."),
+/* 28 */ T('meds',"A client taking furosemide reports constipation, muscle weakness, and heart palpitations. Which laboratory result does the nurse expect?",
+ ["Potassium 3.0 mEq/L","Potassium 5.8 mEq/L","Sodium 150 mEq/L","Calcium 11.5 mg/dL"],[0],
+ "Furosemide is a loop diuretic that wastes potassium. Hypokalemia causes constipation, weakness, palpitations, and dysrhythmias. Hyperkalemia would show a high potassium."),
+/* 29 */ T('meds',"Which assessments should the nurse perform for a client receiving furosemide?",
+ ["Daily weight","Blood pressure","Kidney function (BUN and creatinine)","Electrolytes, especially potassium and magnesium","Pupillary reaction to light","Serum bilirubin"],[0,1,2,3],
+ "Furosemide can cause fluid loss, low BP, kidney problems, and electrolyte loss (potassium and magnesium), so monitor weight, BP, kidney function, and electrolytes. Pupil checks and bilirubin are not related."),
+/* 30 */ T('meds',"The nurse explains to a client with heart failure how furosemide helps. Which explanation is correct?",
+ ["It removes excess sodium and water through the urine, which reduces fluid overload","It slows conduction through the AV node","It makes the heart beat more forcefully","It prevents clots from forming in the heart"],[0],
+ "Loop diuretics remove sodium and water, decreasing fluid volume, edema, and workload on the heart. Slowing AV conduction and increasing contractility describe digoxin; anticoagulants prevent clots."),
+/* 31 */ T('meds',"Which findings should the nurse recognize as possible signs of digoxin toxicity?",
+ ["Nausea","Yellow-green halos around lights","New loss of appetite (anorexia)","Heart rate of 52 beats/min","Increased appetite","Heart rate of 88 beats/min"],[0,1,2,3],
+ "Digoxin toxicity causes GI symptoms (nausea, anorexia), visual changes (yellow-green halos), and bradycardia or dysrhythmias. A heart rate of 88 and an increased appetite are not signs of toxicity."),
+/* 32 */ T('meds',"Before giving scheduled digoxin, the nurse counts the apical pulse for 1 full minute and finds 61 beats/min. What should the nurse do?",
+ ["Give the medication as prescribed","Hold the medication and notify the provider","Give half of the dose","Recheck the pulse in 1 hour and then decide"],[0],
+ "The usual hold parameter for digoxin in adults is an apical pulse below 60 beats/min (check facility policy). A rate of 61 is above that, so the dose can be given. Also review potassium and kidney function when labs are available."),
+/* 33 */ T('meds',"A client is due for digoxin. The apical pulse is 72 beats/min and the potassium level is 3.1 mEq/L. What should the nurse do?",
+ ["Hold the dose and notify the provider","Give the dose because the pulse is above 60","Give the dose with a banana","Give half of the dose"],[0],
+ "Hypokalemia makes the heart much more sensitive to digoxin and increases the risk of toxicity and dysrhythmias, so look at potassium before giving it. The nurse should hold the dose and report the low potassium."),
+/* 34 */ T('meds',"Which client statement about digoxin indicates a need for further teaching?",
+ ["“I will check my pulse before I take it.”","“I will report nausea or seeing yellow-green halos.”","“If I lose my appetite, I will stop taking it.”","“I will keep my appointments for blood tests.”"],[2],
+ "Clients should report new appetite loss, nausea, or vision changes (possible toxicity) to the provider, not stop the medication on their own. Checking the pulse and keeping lab appointments are correct."),
+/* 35 */ T('meds',"Which medication and adverse effect pairs are correct?",
+ ["Beta blocker: orthostatic hypotension and fall risk","ACE inhibitor: angioedema","Furosemide: hypokalemia","Digoxin: yellow-green visual halos","Furosemide: hyperkalemia","ACE inhibitor: bradycardia"],[0,1,2,3],
+ "Beta blockers cause orthostatic hypotension, ACE inhibitors can cause angioedema (and raise potassium), furosemide wastes potassium, and digoxin toxicity can cause yellow-green halos. Furosemide causes low (not high) potassium, and bradycardia is not a typical ACE inhibitor effect."),
+
+/* ===== HYPERTENSION (36-50) ===== */
+/* 36 */ T('htn',"An adult client's blood pressure is 134/82 mm Hg. Using AHA/ACC categories, the nurse classifies this as:",
+ ["Stage 1 hypertension","Normal blood pressure","Elevated blood pressure","Stage 2 hypertension"],[0],
+ "Stage 1 is a systolic of 130–139 or a diastolic of 80–89. This client has both. Elevated is 120–129 with a diastolic under 80, and Stage 2 is 140/90 or higher."),
+/* 37 */ T('htn',"Which blood pressure readings are correctly matched to their category for an adult client?",
+ ["118/76 mm Hg: Normal","124/78 mm Hg: Elevated","136/84 mm Hg: Stage 1","142/92 mm Hg: Stage 2","176/118 mm Hg: Hypertensive crisis","128/82 mm Hg: Elevated"],[0,1,2,3],
+ "Crisis is above 180 systolic and/or above 120 diastolic, so 176/118 is Stage 2. Elevated requires a diastolic below 80, so 128/82 is Stage 1. The other pairs are correct."),
+/* 38 */ T('htn',"Which finding distinguishes a hypertensive emergency from a hypertensive urgency?",
+ ["Evidence of acute target-organ damage","Systolic BP above 180 mm Hg","Diastolic BP above 120 mm Hg","A mild headache"],[0],
+ "Both urgency and emergency have severely elevated BP. An emergency also has acute target-organ damage (such as stroke signs, chest pain, pulmonary edema, or kidney injury). In urgency there is no new organ damage."),
+/* 39 */ T('htn',"A client has a BP of 192/124 mm Hg with severe headache, blurred vision, and confusion. Which action is the nurse's priority?",
+ ["Prepare for IV antihypertensive therapy with continuous BP monitoring","Give the scheduled oral antihypertensive and recheck in 1 hour","Teach the client about a low-sodium eating plan","Dim the lights and recheck BP in 30 minutes"],[0],
+ "These symptoms signal a hypertensive emergency with possible brain injury. It needs IV medication (for example nicardipine) and continuous monitoring, usually in critical care. Oral medication, teaching, or waiting would delay lifesaving treatment."),
+/* 40 */ T('htn',"A client with stage 2 hypertension is found on the floor after a fall. BP is 185/125 mm Hg and the client is newly confused. What is the nurse's priority concern?",
+ ["Possible stroke needing urgent neurologic assessment and provider notification","Risk for further falls","Need for restraints for safety","Dehydration"],[0],
+ "Severe hypertension with new confusion can indicate a stroke, which requires urgent assessment and intervention. Fall prevention matters but is not the immediate priority, restraints should be avoided, and dehydration is not suggested."),
+/* 41 */ T('htn',"Which findings could indicate target-organ damage from uncontrolled hypertension?",
+ ["Left ventricular hypertrophy","Elevated serum creatinine","Papilledema or retinal changes","Stroke","Hypoglycemia","Lobar consolidation on chest X-ray"],[0,1,2,3],
+ "Chronic high pressure damages the heart (LVH), kidneys (↑ creatinine), eyes (retinal changes), and brain (stroke). Hypoglycemia and pneumonia (consolidation) are not direct results of hypertension."),
+/* 42 */ T('htn',"Which lifestyle changes should the nurse recommend for a client with hypertension?",
+ ["Limit sodium to less than 2,300 mg per day","Follow a DASH-style eating plan","Do regular aerobic exercise","Limit alcohol","Eliminate all carbohydrates","Cut back smoking to fewer than 10 cigarettes a day"],[0,1,2,3],
+ "Sodium restriction, the DASH or Mediterranean-style eating plan, regular aerobic activity, and limiting alcohol all lower BP (weight loss also helps). Eliminating all carbohydrates is unnecessary, and the goal for smoking is cessation, not just cutting back."),
+/* 43 */ T('htn',"Which statement by a client newly diagnosed with hypertension shows understanding of the treatment plan?",
+ ["“I need to keep taking my BP medicine even when I feel fine.”","“I can stop my medicine when my BP is normal.”","“I'll take it only when I have a headache.”","“I'll double my dose when my BP is high.”"],[0],
+ "Hypertension is usually silent and lifelong, so medication is taken as prescribed even without symptoms. Stopping, skipping, or doubling doses can cause dangerous BP changes."),
+/* 44 */ T('htn',"A client who just started an antihypertensive reports dizziness when standing up. Which response by the nurse is best?",
+ ["“Sit at the edge of the bed for a minute before you stand, and report dizziness that keeps happening.”","“Stop taking the medicine until the dizziness goes away.”","“Dizziness is expected, so no precautions are needed.”","“Take an extra dose at bedtime.”"],[0],
+ "Orthostatic hypotension is common when starting BP medications, so teach slow position changes and fall precautions and report persistent dizziness. Clients should not stop or change doses on their own."),
+/* 45 */ T('htn',"Which risk factor for hypertension is nonmodifiable?",
+ ["Family history of hypertension","Obesity","High sodium intake","Sedentary lifestyle"],[0],
+ "Age, family history, and ethnicity cannot be changed. Obesity, sodium intake, and inactivity are modifiable lifestyle risk factors."),
+/* 46 */ T('htn',"A client with chronic kidney disease is diagnosed with hypertension. The nurse recognizes this as:",
+ ["Secondary hypertension","Primary (essential) hypertension","White-coat hypertension","Hypertensive emergency"],[0],
+ "Secondary hypertension has an identifiable cause, such as kidney disease. Primary (essential) hypertension has no single identifiable cause and is more common."),
+/* 47 */ T('htn',"Which action ensures an accurate blood pressure measurement?",
+ ["Use a correctly sized cuff, with the client seated, rested 5 minutes, and the arm supported at heart level","Use a small cuff on a large arm to get a tighter fit","Measure right after the client drinks coffee or climbs stairs","Let the arm hang below heart level"],[0],
+ "Correct cuff size, resting for 5 minutes, seated with back and feet supported, and the arm at heart level prevent false readings. A too-small cuff or an arm below the heart gives falsely high values."),
+/* 48 */ T('htn',"A client says, “I take my blood pressure pill every day, but my readings are still high.” Which action should the nurse take first?",
+ ["Ask the client to describe how and when each medication is taken","Notify the provider to increase the dose","Teach only about a low-sodium eating plan","Refer the client for surgery"],[0],
+ "Assess first. Look for missed doses, wrong timing, cost or side-effect barriers, or interacting products before changing the plan. Surgery is not indicated for uncontrolled hypertension."),
+/* 49 */ T('htn',"A client with Stage 1 hypertension is advised to follow a DASH or Mediterranean-style eating plan. Which meal choice shows correct understanding?",
+ ["Grilled salmon with brown rice, steamed broccoli, and fruit","A deli ham sandwich with canned soup","Frozen pizza and chips","Instant noodles with seasoning packet"],[0],
+ "These plans emphasize vegetables, fruit, whole grains, and fish with limited sodium. Processed meats, canned soups, frozen meals, and instant noodles are high in sodium."),
+/* 50 */ T('htn',"A client is receiving IV nicardipine for a hypertensive emergency. Which nursing action is most important?",
+ ["Monitor BP and heart rate frequently so BP is lowered gradually and not too fast","Lower BP to 120/80 mm Hg within the first 15 minutes","Check BP once per shift","Give a potassium supplement with each dose"],[0],
+ "Too rapid a drop can cause brain, heart, or kidney ischemia, so BP is reduced gradually (about 25% in the first hour) with close monitoring and IV site checks. A normal BP in minutes, once-per-shift checks, and potassium supplements are all inappropriate.")
+];
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const KEY='htn_hf_garden_best_v1';
+function getBest(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){return null}}
+function setBest(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}
+const idxs=t=>Q.map((q,i)=>i).filter(i=>t==='all'||Q[i].topic===t);
+
+/* floating bows, ballet flats and hearts */
+(function(){
+  if(reduce) return;
+  const L=$('#floaty'), glyphs=['♡','✿','✦','♥'];
+  for(let i=0;i<20;i++){
+    const s=document.createElement('span');
+    const kind=i%5;
+    if(kind===1) s.innerHTML='<svg viewBox="0 0 64 40" width="38" height="24"><use href="#bow"/></svg>';
+    else if(kind===3) s.innerHTML='<svg viewBox="0 0 80 50" width="44" height="28"><use href="#flat"/></svg>';
+    else {s.textContent=glyphs[i%glyphs.length]; s.style.fontSize=(14+Math.random()*24)+'px';}
+    s.style.left=(Math.random()*96)+'vw';
+    s.style.animationDuration=(15+Math.random()*16)+'s';
+    s.style.animationDelay=(-Math.random()*22)+'s';
+    L.appendChild(s);
+  }
+})();
+
+/* ---------- state ---------- */
+let topic='all', bankTopic='all', order=[], pos=0, res=[], checked=false, fullRun=true;
+const screens=['home','quiz','results','guide','bank'];
+function show(id){
+  screens.forEach(s=>$('#'+s).classList.toggle('hidden',s!==id));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+const shuffled=a=>{const b=a.slice();for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
+
+function chips(el,current,onPick){
+  el.innerHTML=Object.keys(TOPICS).map(k=>{
+    const n=idxs(k).length;
+    return `<button class="tc ${k===current?'on':''}" data-t="${k}" aria-pressed="${k===current}">${k==='all'?TOPICS.all:TOPICS[k]+' ('+n+')'}</button>`;
+  }).join('');
+  el.querySelectorAll('.tc').forEach(b=>b.onclick=()=>onPick(b.dataset.t));
+}
+function drawHomeChips(){chips($('#topicChips'),topic,t=>{topic=t;drawHomeChips()})}
+function updateBest(){
+  const b=getBest();
+  $('#best').textContent=b?`🏆 Best full-test score: ${b.pct}% (${b.pts} / ${b.total})`:'Your best score will show up here ♡';
+}
+
+function start(list,full){
+  fullRun=full;
+  order=$('#shuffle').checked||!full?shuffled(list):list.slice();
+  pos=0; res=new Array(order.length).fill(null);
+  show('quiz'); renderQ();
+}
+function setProgress(done){
+  const pct=done/order.length*100;
+  $('#barIn').style.width=pct+'%';
+  $('#walker').style.left=Math.min(97,Math.max(3,pct))+'%';
+  $('#barOuter').setAttribute('aria-valuenow',Math.round(pct));
+}
+const points=()=>res.reduce((a,r)=>a+(r?(r.status==='correct'?1:r.status==='partial'?.5:0):0),0);
+
+/* ---------- quiz ---------- */
+function renderQ(){
+  checked=false;
+  const q=Q[order[pos]];
+  $('#qcount').textContent=`Question ${pos+1} of ${order.length}`;
+  $('#tally').textContent='♡ '+points();
+  setProgress(pos);
+  $('#qtag').textContent={hf:'Heart failure',meds:'Medications',htn:'Hypertension'}[q.topic];
+  $('#qtext').textContent=q.q;
+  $('#sata').innerHTML=q.type==='multi'?'<span class="sata">✿ Select all that apply</span>':'';
+  const box=$('#opts'); box.classList.remove('locked'); box.innerHTML='';
+  const kind=q.type==='multi'?'checkbox':'radio';
+  shuffled(q.opts.map((_,k)=>k)).forEach(i=>{
+    const o=q.opts[i];
+    const lab=document.createElement('label'); lab.className='opt'; lab.dataset.i=i;
+    lab.innerHTML=`<div class="line"><input type="${kind}" name="o" value="${i}"><span class="mark ${q.type==='multi'?'c':'r'}"></span><span class="txt">${esc(o.t)}</span></div><div class="extra"></div>`;
+    box.appendChild(lab);
+  });
+  $('#feedback').innerHTML='';
+  $('#checkBtn').classList.remove('hidden'); $('#checkBtn').disabled=true;
+  $('#nextBtn').classList.add('hidden');
+  $('#nextBtn').textContent=(pos===order.length-1)?'See my results 🎀':'Continue →';
+  $('#qtext').focus({preventScroll:true});
+}
+$('#opts').addEventListener('change',()=>{
+  if(checked) return;
+  const inputs=[...document.querySelectorAll('#opts input')];
+  inputs.forEach(inp=>inp.closest('.opt').classList.toggle('sel',inp.checked));
+  $('#checkBtn').disabled=!inputs.some(i=>i.checked);
+});
+
+$('#checkBtn').addEventListener('click',()=>{
+  if(checked) return; checked=true;
+  const q=Q[order[pos]];
+  const sel=[...document.querySelectorAll('#opts input:checked')].map(i=>+i.value);
+  const total=q.opts.filter(o=>o.ok).length;
+  const hits=sel.filter(i=>q.opts[i].ok).length, wrong=sel.length-hits;
+  let status;
+  if(hits===total && wrong===0) status='correct';
+  else if(q.type==='multi' && hits>wrong) status='partial';
+  else status='incorrect';
+  res[pos]={status,sel};
+  $('#opts').classList.add('locked');
+  document.querySelectorAll('#opts input').forEach(i=>i.disabled=true);
+  document.querySelectorAll('#opts .opt').forEach(lab=>{
+    const i=+lab.dataset.i, o=q.opts[i], picked=sel.includes(i);
+    lab.classList.remove('sel');
+    let cls='', tag='';
+    if(o.ok&&picked){cls='good';tag='✓ Correct'+(q.type==='single'?' · my answer':'')}
+    else if(o.ok&&!picked){cls=q.type==='multi'?'missed':'good';tag=q.type==='multi'?'Should be selected':'✓ Correct answer'}
+    else if(!o.ok&&picked){cls='bad';tag='✕ Not correct · my answer'}
+    if(cls) lab.classList.add(cls);
+    if(tag) lab.querySelector('.extra').innerHTML=`<span class="tag">${tag}</span>`;
+  });
+  const msgs={correct:['Yay, correct! ✨','🎉'],partial:[`Partially correct, so close! You found ${hits} of ${total} 🌸`,'🌼'],incorrect:["Oopsie! Let's learn from this ♡",'💭']};
+  $('#feedback').innerHTML=`<div class="banner ${status}"><span>${msgs[status][1]}</span><span>${msgs[status][0]}</span></div>
+    <div class="rationale"><h4>Rationale 🎀</h4><p>${esc(q.r)}</p></div>`;
+  $('#tally').textContent='♡ '+points();
+  setProgress(pos+1);
+  $('#checkBtn').classList.add('hidden'); $('#nextBtn').classList.remove('hidden');
+  setTimeout(()=>$('#feedback').scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'}),60);
+  $('#nextBtn').focus({preventScroll:true});
+});
+$('#nextBtn').addEventListener('click',()=>{
+  if(pos<order.length-1){pos++;renderQ();window.scrollTo({top:0,behavior:'smooth'})}
+  else finish();
+});
+
+/* ---------- results ---------- */
+function finish(){
+  const total=order.length, pts=points(), pct=Math.round(pts/total*100);
+  $('#resPct').textContent=pct+'%';
+  $('#resPts').textContent=`${pts} / ${total} pts`;
+  $('#ring').style.setProperty('--p',pct);
+  const m=pct>=90?['You did it! ✨','Absolutely glowing! You really know your heart failure and hypertension.']:
+          pct>=75?['Great job! 🌸','So close to perfect, superstar! A quick look at the missed ones and you\'re set.']:
+          pct>=50?['Nice start! 🌷','You\'re blooming. Review the rationales and the study guide, then try again.']:
+                  ['Keep going! 💗','Every nurse starts somewhere. Read the study guide, then retry.'];
+  $('#resTitle').textContent=m[0]; $('#resMsg').textContent=m[1];
+  const lab={correct:'Correct',partial:'Partial',incorrect:'Missed'};
+  $('#resList').innerHTML=order.map((qi,i)=>`<li><span class="pill ${res[i].status}">${lab[res[i].status]}</span><span class="q">Q${qi+1}. ${esc(Q[qi].q)}</span></li>`).join('');
+  $('#missedBtn').classList.toggle('hidden',res.every(r=>r.status==='correct'));
+  if(fullRun && total===Q.length){const b=getBest(); if(!b||pct>b.pct) setBest({pct,pts,total})}
+  updateBest(); show('results');
+  if(pct>=75) confetti();
+}
+function confetti(){
+  if(reduce) return;
+  const bits=['💗','🎀','✨','🌸','💖','🩰'];
+  for(let i=0;i<32;i++){
+    const s=document.createElement('span'); s.className='confetti';
+    s.textContent=bits[i%bits.length];
+    s.style.left=(Math.random()*100)+'vw';
+    s.style.fontSize=(16+Math.random()*18)+'px';
+    s.style.animationDuration=(2.5+Math.random()*2.5)+'s';
+    s.style.animationDelay=(Math.random()*.8)+'s';
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(),6500);
+  }
+}
+
+/* ---------- answer bank ---------- */
+function renderBank(){
+  chips($('#bankChips'),bankTopic,t=>{bankTopic=t;renderBank()});
+  const f=$('#search').value.trim().toLowerCase();
+  const items=idxs(bankTopic).filter(i=>{
+    if(!f) return true; const q=Q[i];
+    return (q.q+' '+q.opts.map(o=>o.t).join(' ')+' '+q.r).toLowerCase().includes(f);
+  });
+  if(!items.length){$('#bankList').innerHTML='<div class="empty">No matches found 🌸 Try another word!</div>';return}
+  $('#bankList').innerHTML=items.map(i=>{
+    const q=Q[i];
+    return `<details><summary><span class="n">${i+1}</span><span>${esc(q.q)}</span></summary><div class="sbody">
+      ${q.type==='multi'?'<span class="sata">✿ Select all that apply</span>':''}
+      ${q.opts.map(o=>`<div class="sopt ${o.ok?'ok':''}">${o.ok?'✓ ':''}${esc(o.t)}</div>`).join('')}
+      <div class="rationale"><h4>Rationale 🎀</h4><p>${esc(q.r)}</p></div></div></details>`;
+  }).join('');
+}
+$('#search').addEventListener('input',renderBank);
+
+/* ---------- wiring ---------- */
+function goHome(){updateBest();drawHomeChips();show('home')}
+function openGuide(){show('guide')}
+function openBank(){$('#search').value='';renderBank();show('bank')}
+const startTopic=()=>start(idxs(topic),topic==='all');
+$('#homeBtn').onclick=goHome;
+$('#startBtn').onclick=startTopic;
+$('#guideBtn').onclick=openGuide; $('#guideTop').onclick=openGuide; $('#resGuide').onclick=openGuide;
+$('#bankBtn').onclick=openBank; $('#guideBank').onclick=openBank;
+$('#guideStart').onclick=()=>{topic='all';start(idxs('all'),true)};
+$('#bankStart').onclick=()=>{topic=bankTopic;start(idxs(bankTopic),bankTopic==='all')};
+$('#quitBtn').onclick=goHome;
+$('#retryBtn').onclick=startTopic;
+$('#missedBtn').onclick=()=>{
+  const missed=order.filter((qi,i)=>res[i].status!=='correct');
+  if(missed.length) start(missed,false);
+};
+updateBest(); drawHomeChips();
+</script>
+</body>
+</html>
